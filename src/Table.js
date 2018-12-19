@@ -10,9 +10,9 @@ const Row = ({name, job, age, nick, employee, remove}) => (
     <div>{nick}</div>
     <div> {
     employee ? (
-        <input type="checkbox" defaultChecked/>
+        <input type="checkbox" defaultChecked onClick={function(e){e.preventDefault() }}/>
       ) : (
-        <input type="checkbox" />
+        <input type="checkbox" onClick={function(e){e.preventDefault() }}/>
       )}
         </div>    
         <div><input type="button" value="Delete" className="button" onClick={() => remove(name, job)}/></div>    

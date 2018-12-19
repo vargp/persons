@@ -15,19 +15,21 @@
 .table .modal{
   padding: 1rem;
   border: 1px solid #000;  
-  
-  position: fixed;
+  position: absolute;
   background: white;
   left: 50%;
-  margin-right: -50%;
+  transform: translate(-50%);
   top: 10%;
+  
 }
 
 .table .modalLine{
   margin-bottom: 10px;  
 }
 
-
+input[type=checkbox][disabled]{
+    opacity: 1;
+}
 
 .table .modalButtons{
   text-align: center;
